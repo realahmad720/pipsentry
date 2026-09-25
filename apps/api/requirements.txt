@@ -1,0 +1,31 @@
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+python-multipart==0.0.20
+pydantic==2.13.5
+pydantic-settings==2.15.0
+sqlalchemy==2.0.54
+alembic==1.20.0
+psycopg[binary]==3.3.6
+qdrant-client==1.19.1
+python-jose[cryptography]==3.3.0
+httpx==0.28.1
+
+# Knowledge ingestion pipeline (spec Section 6)
+pypdf==6.19.0
+youtube-transcript-api==1.2.4
+yt-dlp==2026.8.19
+langchain-text-splitters==1.1.2
+tiktoken==0.14.0
+openai==3.19.2
+
+# Multi-agent reasoning (spec Section 7) + market data MCP bridge (Section 3)
+langgraph==1.2.12
+anthropic==1.8.0
+mcp==2.2.0
+
+# Security (Section 11: encrypted-at-rest fields) & observability (Section 13)
+cryptography==50.0.1
+sentry-sdk==2.70.0
+
+# Tests (Section 7 hardening — tenant isolation, pure-logic unit tests)
+pytest==9.1.1

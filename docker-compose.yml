@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: pipsentry
+    ports:
+      - "5432:5432"
+    volumes:
+      - pipsentry_postgres_data:/var/lib/postgresql/data
+
+  qdrant:
+    image: qdrant/qdrant:latest
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - pipsentry_qdrant_data:/qdrant/storage
+
+volumes:
+  pipsentry_postgres_data:
+  pipsentry_qdrant_data:

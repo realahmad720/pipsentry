@@ -1,0 +1,23 @@
+# Node
+node_modules/
+.next/
+out/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Uploaded knowledge sources (local dev storage, see app/ingestion/storage.py)
+apps/api/uploads/
+
+# Env
+.env
+.env.local
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+.claude/
